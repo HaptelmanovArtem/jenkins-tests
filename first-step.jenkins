@@ -13,7 +13,7 @@ pipeline {
         stage("First step") {
             steps {
                 script{
-                    file = new File('C:/Users/Artem/Desktop/new_file.txt').text
+                    File file = new File('C:/Users/Artem/Desktop/new_file.txt')
                     file.createNewFile()
                 }
             }
