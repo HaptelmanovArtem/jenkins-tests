@@ -15,6 +15,7 @@ pipeline {
                 script{
                     File file = new File('C:/Users/Artem/Desktop/new_file.txt')
                     file.createNewFile()
+                    timestamps()
                 }
             }
         }
