@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'New-Item -Path 'C:\\Users\\Artem\\Desktop\\new-test-directory' -ItemType Directory'
+                sh 'New-Item -Path 'C:/Users/Artem/Desktop/new-test-directory' -ItemType Directory'
             }
         }
     }
