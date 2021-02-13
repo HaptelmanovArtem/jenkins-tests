@@ -12,7 +12,10 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'New-Item -Path 'C:/Users/Artem/Desktop/new-test-directory' -ItemType Directory'
+                script{
+                    file = new File('C:/Users/Artem/Desktop/new_file.txt').text
+                    file.createNewFile()
+                }
             }
         }
     }
